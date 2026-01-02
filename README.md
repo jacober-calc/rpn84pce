@@ -1,3 +1,16 @@
+## TI-84 Plus CE Port
+
+This repository is an **independent TI-84 Plus CE port** of the RPN calculator application
+**rpn83p** by **bxparks**.
+
+- Original project: https://github.com/bxparks/rpn83p
+- This port adapts the program for the TI-84 Plus CE hardware and OS
+- The port is maintained independently and is not an official upstream release
+
+All original design and credit belong to bxparks.
+
+---
+
 # RPN83P
 
 RPN calculator app for the TI-83 Plus and TI-84 Plus inspired by the HP-42S.
