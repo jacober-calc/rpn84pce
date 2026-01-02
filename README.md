@@ -1,13 +1,12 @@
 ## TI-84 Plus CE Port
 
 This repository is an **independent TI-84 Plus CE port** of the RPN calculator application
-**rpn83p** by **bxparks**.
+**[rpn83p](https://github.com/bxparks/rpn83p)**.
 
-- Original project: https://github.com/bxparks/rpn83p
 - This port adapts the program for the TI-84 Plus CE hardware and OS
 - The port is maintained independently and is not an official upstream release
 
-All original design and credit belong to bxparks.
+All original design and credit belong to **bxparks**.
 
 ---
 
@@ -30,7 +29,7 @@ users to the beauty and power of RPN calculators.
 
 Your calculator will look like this when using RPN83P:
 
-![RPN83P Teaser](docs/images/fullshot/fullshot-teaser.png)
+![RPN83P Teaser](upstream/docs/images/fullshot/fullshot-teaser.png)
 
 RPN83P is a flash application written in Z80 assembly language that consumes 4
 pages (64 kiB) of flash memory. Since it is stored in flash, it is preserved if
@@ -139,8 +138,8 @@ Missing features (partial list):
 
 **Version**: 1.1.1 (2025-11-14) \
 **Project Home**: https://github.com/bxparks/rpn83p \
-**User Guide**: [USER_GUIDE.md](docs/USER_GUIDE.md) \
-**Changelog**: [CHANGELOG.md](CHANGELOG.md)
+**User Guide**: [USER_GUIDE.md](upstream/docs/USER_GUIDE.md) \
+**Changelog**: [CHANGELOG.md](upstream/CHANGELOG.md)
 
 ## Table of Contents
 
@@ -162,7 +161,7 @@ Missing features (partial list):
 
 RPN83P is a flash application that is packaged as a single file named
 `rpn83p.8xk`. Detailed instructions are given in the [RPN83P User
-Guide](docs/USER_GUIDE.md), but here is the quick version:
+Guide](upstream/docs/USER_GUIDE.md), but here is the quick version:
 
 - Download the `rpn83p.8xk` file from the
   [releases page](https://github.com/bxparks/rpn83p/releases).
@@ -181,7 +180,7 @@ Guide](docs/USER_GUIDE.md), but here is the quick version:
 
 The RPN83P app starts directly into the calculator mode, like this:
 
-![RPN83P Initial Start Screen](docs/images/installation/rpn83p-initial.png)
+![RPN83P Initial Start Screen](upstream/docs/images/installation/rpn83p-initial.png)
 
 ### Supported Hardware
 
@@ -240,22 +239,22 @@ outwards. Enter the following keystrokes:
 
 | **Keys**          | **Display**                            |
 | ----------------  | ---------------------                  |
-| `2.1`             | ![](docs/images/readme/example1-01.png) |
-| `X^2`             | ![](docs/images/readme/example1-02.png) |
-| `2ND ANS`         | ![](docs/images/readme/example1-03.png) |
-| `*`               | ![](docs/images/readme/example1-04.png) |
-| `2ND PI`          | ![](docs/images/readme/example1-05.png) |
-| `*`               | ![](docs/images/readme/example1-06.png) |
-| `4`               | ![](docs/images/readme/example1-07.png) |
-| `*`               | ![](docs/images/readme/example1-08.png) |
-| `3`               | ![](docs/images/readme/example1-09.png) |
-| `/`               | ![](docs/images/readme/example1-10.png) |
+| `2.1`             | ![](upstream/docs/images/readme/example1-01.png) |
+| `X^2`             | ![](upstream/docs/images/readme/example1-02.png) |
+| `2ND ANS`         | ![](upstream/docs/images/readme/example1-03.png) |
+| `*`               | ![](upstream/docs/images/readme/example1-04.png) |
+| `2ND PI`          | ![](upstream/docs/images/readme/example1-05.png) |
+| `*`               | ![](upstream/docs/images/readme/example1-06.png) |
+| `4`               | ![](upstream/docs/images/readme/example1-07.png) |
+| `*`               | ![](upstream/docs/images/readme/example1-08.png) |
+| `3`               | ![](upstream/docs/images/readme/example1-09.png) |
+| `/`               | ![](upstream/docs/images/readme/example1-10.png) |
 
 The `X` register should show `38.79238609`.
 
 Here is an animated GIF that shows this calculation:
 
-![RPN83P Example 1 GIF](docs/images/readme/rpn83p-example1.gif)
+![RPN83P Example 1 GIF](upstream/docs/images/readme/rpn83p-example1.gif)
 
 (Note that the RPN83P provides a `X^3` menu function that could have been used
 for this formula, but I used the `LASTX` feature to demonstrate its use.)
@@ -272,28 +271,28 @@ view the final result as a decimal number:
 
 | **Keys**              | **Display**                               |
 | ---------             | ----------                                |
-| `MATH` (HOME)         | ![](docs/images/readme/example2-01.png)   |
-| `DownArrow`           | ![](docs/images/readme/example2-02.png)   |
-| `BASE`                | ![](docs/images/readme/example2-03.png)   |
-| `HEX`                 | ![](docs/images/readme/example2-04.png)   |
-| `ALPHA B` `6`         | ![](docs/images/readme/example2-05.png)   |
-| `ENTER`               | ![](docs/images/readme/example2-06.png)   |
-| `6` `5`               | ![](docs/images/readme/example2-07.png)   |
-| `DownArrow`           | ![](docs/images/readme/example2-08.png)   |
-| `LOGI`                | ![](docs/images/readme/example2-09.png)   |
-| `AND`                 | ![](docs/images/readme/example2-10.png)   |
-| `ON/EXIT` `UpArrow`   | ![](docs/images/readme/example2-11.png)   |
-| `OCT`                 | ![](docs/images/readme/example2-12.png)   |
-| `BIN`                 | ![](docs/images/readme/example2-13.png)   |
-| `DownArrow`           | ![](docs/images/readme/example2-14.png)   |
-| `ROTS`                | ![](docs/images/readme/example2-15.png)   |
-| `SR` `SR` `SR` (3X)   | ![](docs/images/readme/example2-16.png)   |
-| `ON/EXIT` `UpArrow`   | ![](docs/images/readme/example2-17.png)   |
-| `DEC`                 | ![](docs/images/readme/example2-18.png)   |
+| `MATH` (HOME)         | ![](upstream/docs/images/readme/example2-01.png)   |
+| `DownArrow`           | ![](upstream/docs/images/readme/example2-02.png)   |
+| `BASE`                | ![](upstream/docs/images/readme/example2-03.png)   |
+| `HEX`                 | ![](upstream/docs/images/readme/example2-04.png)   |
+| `ALPHA B` `6`         | ![](upstream/docs/images/readme/example2-05.png)   |
+| `ENTER`               | ![](upstream/docs/images/readme/example2-06.png)   |
+| `6` `5`               | ![](upstream/docs/images/readme/example2-07.png)   |
+| `DownArrow`           | ![](upstream/docs/images/readme/example2-08.png)   |
+| `LOGI`                | ![](upstream/docs/images/readme/example2-09.png)   |
+| `AND`                 | ![](upstream/docs/images/readme/example2-10.png)   |
+| `ON/EXIT` `UpArrow`   | ![](upstream/docs/images/readme/example2-11.png)   |
+| `OCT`                 | ![](upstream/docs/images/readme/example2-12.png)   |
+| `BIN`                 | ![](upstream/docs/images/readme/example2-13.png)   |
+| `DownArrow`           | ![](upstream/docs/images/readme/example2-14.png)   |
+| `ROTS`                | ![](upstream/docs/images/readme/example2-15.png)   |
+| `SR` `SR` `SR` (3X)   | ![](upstream/docs/images/readme/example2-16.png)   |
+| `ON/EXIT` `UpArrow`   | ![](upstream/docs/images/readme/example2-17.png)   |
+| `DEC`                 | ![](upstream/docs/images/readme/example2-18.png)   |
 
 Here is the animated GIF that shows this calculation:
 
-![RPN83P Example 2 GIF](docs/images/readme/rpn83p-example2.gif)
+![RPN83P Example 2 GIF](upstream/docs/images/readme/rpn83p-example2.gif)
 
 ### Example 3
 
@@ -311,24 +310,24 @@ Here are the steps:
 
 | **Keys**              | **Display**                               |
 | ---------             | ----------                                |
-| `MATH` `DownArrow`    | ![](docs/images/readme/example3-01.png)   |
-| `TVM`                 | ![](docs/images/readme/example3-02.png)   |
-| `DownArrow`           | ![](docs/images/readme/example3-03.png)   |
-| `CLTV`                | ![](docs/images/readme/example3-04.png)   |
-| `UpArrow`             | ![](docs/images/readme/example3-05.png)   |
-| `360` `N`             | ![](docs/images/readme/example3-06.png)   |
-| `8` `I%YR`            | ![](docs/images/readme/example3-07.png)   |
-| `500000` `PV`         | ![](docs/images/readme/example3-08.png)   |
-| `0` `FV`              | ![](docs/images/readme/example3-09.png)   |
-| `PMT`                 | ![](docs/images/readme/example3-10.png)   |
-| `7` `I%YR`            | ![](docs/images/readme/example3-11.png)   |
-| `PMT`                 | ![](docs/images/readme/example3-12.png)   |
-| `-3000` `PMT`         | ![](docs/images/readme/example3-13.png)   |
-| `I%YR`                | ![](docs/images/readme/example3-14.png)   |
+| `MATH` `DownArrow`    | ![](upstream/docs/images/readme/example3-01.png)   |
+| `TVM`                 | ![](upstream/docs/images/readme/example3-02.png)   |
+| `DownArrow`           | ![](upstream/docs/images/readme/example3-03.png)   |
+| `CLTV`                | ![](upstream/docs/images/readme/example3-04.png)   |
+| `UpArrow`             | ![](upstream/docs/images/readme/example3-05.png)   |
+| `360` `N`             | ![](upstream/docs/images/readme/example3-06.png)   |
+| `8` `I%YR`            | ![](upstream/docs/images/readme/example3-07.png)   |
+| `500000` `PV`         | ![](upstream/docs/images/readme/example3-08.png)   |
+| `0` `FV`              | ![](upstream/docs/images/readme/example3-09.png)   |
+| `PMT`                 | ![](upstream/docs/images/readme/example3-10.png)   |
+| `7` `I%YR`            | ![](upstream/docs/images/readme/example3-11.png)   |
+| `PMT`                 | ![](upstream/docs/images/readme/example3-12.png)   |
+| `-3000` `PMT`         | ![](upstream/docs/images/readme/example3-13.png)   |
+| `I%YR`                | ![](upstream/docs/images/readme/example3-14.png)   |
 
 Here is the animated GIF that shows this calculation:
 
-![RPN83P Example 3 GIF](docs/images/readme/rpn83p-example3.gif)
+![RPN83P Example 3 GIF](upstream/docs/images/readme/rpn83p-example3.gif)
 
 ### Example 4
 
@@ -346,26 +345,26 @@ The keystrokes are:
 
 | **Keys**                              | **Display**                               |
 | ---------                             | ----------                                |
-| `MODE` `DownArrow` `RECT`             | ![](docs/images/readme/example4-01.png)   |
-| `100` `ENTER`                         | ![](docs/images/readme/example4-02.png)   |
-| `2` `2ND PI` `*` `60` `*`             | ![](docs/images/readme/example4-03.png)   |
-| `1` `2ND EE` `5` `(-)` `*`            | ![](docs/images/readme/example4-04.png)   |
-| `1/X` `(-)`                           | ![](docs/images/readme/example4-05.png)   |
-| `2ND LINK`                            | ![](docs/images/readme/example4-06.png)   |
-| `100` `2ND i` `250`                   | ![](docs/images/readme/example4-07.png)   |
-| `+`                                   | ![](docs/images/readme/example4-08.png)   |
-| `200` `2ND ANGLE` `10`                | ![](docs/images/readme/example4-09.png)   |
-| `+`                                   | ![](docs/images/readme/example4-10.png)   |
-| `300` `2ND ANGLE` `2ND ANGLE` `0.1`   | ![](docs/images/readme/example4-11.png)   |
-| `+`                                   | ![](docs/images/readme/example4-12.png)   |
-| `4` `/`                               | ![](docs/images/readme/example4-13.png)   |
-| `PRAD`                                | ![](docs/images/readme/example4-14.png)   |
-| `PDEG`                                | ![](docs/images/readme/example4-15.png)   |
-| `MATH` (HOME) `CPLX` `CABS`           | ![](docs/images/readme/example4-16.png)   |
+| `MODE` `DownArrow` `RECT`             | ![](upstream/docs/images/readme/example4-01.png)   |
+| `100` `ENTER`                         | ![](upstream/docs/images/readme/example4-02.png)   |
+| `2` `2ND PI` `*` `60` `*`             | ![](upstream/docs/images/readme/example4-03.png)   |
+| `1` `2ND EE` `5` `(-)` `*`            | ![](upstream/docs/images/readme/example4-04.png)   |
+| `1/X` `(-)`                           | ![](upstream/docs/images/readme/example4-05.png)   |
+| `2ND LINK`                            | ![](upstream/docs/images/readme/example4-06.png)   |
+| `100` `2ND i` `250`                   | ![](upstream/docs/images/readme/example4-07.png)   |
+| `+`                                   | ![](upstream/docs/images/readme/example4-08.png)   |
+| `200` `2ND ANGLE` `10`                | ![](upstream/docs/images/readme/example4-09.png)   |
+| `+`                                   | ![](upstream/docs/images/readme/example4-10.png)   |
+| `300` `2ND ANGLE` `2ND ANGLE` `0.1`   | ![](upstream/docs/images/readme/example4-11.png)   |
+| `+`                                   | ![](upstream/docs/images/readme/example4-12.png)   |
+| `4` `/`                               | ![](upstream/docs/images/readme/example4-13.png)   |
+| `PRAD`                                | ![](upstream/docs/images/readme/example4-14.png)   |
+| `PDEG`                                | ![](upstream/docs/images/readme/example4-15.png)   |
+| `MATH` (HOME) `CPLX` `CABS`           | ![](upstream/docs/images/readme/example4-16.png)   |
 
 Here is the animated GIF that shows this calculation:
 
-![RPN83P Example 4 GIF](docs/images/readme/rpn83p-example4.gif)
+![RPN83P Example 4 GIF](upstream/docs/images/readme/rpn83p-example4.gif)
 
 ### Exiting the Menu
 
@@ -374,7 +373,7 @@ Press:
 - `ON` button (`ESC/EXIT`) multiple times to back to the home menu, or
 - `MATH` button (`HOME`) to go back directly.
 
-![ROOT MenuRow 1](docs/images/menu/root-1.png)
+![ROOT MenuRow 1](upstream/docs/images/menu/root-1.png)
 
 ## Documentation
 
@@ -438,9 +437,9 @@ Here are the tools and resources that I used for development on Ubuntu Linux
     - `$ apt install make` to install manually.
 - Python 3
     - The `python3` interpreter should already be installed on your Linux box.
-    - Required to run the [compilemenu.py](tools/compilemenu.py) script that
-      compiles the [menudef.txt](src/menudef.txt) file into the
-      [menudef.asm](src/menudef.asm) file.
+    - Required to run the [compilemenu.py](upstream/tools/compilemenu.py) script that
+      compiles the [menudef.txt](upstream/src/menudef.txt) file into the
+      [menudef.asm](upstream/src/menudef.asm) file.
 - TI-83 SDK docs
     - https://archive.org/details/83psdk/83psysroutines/
 - Learn TI-83 Plus Assembly in 28 Days
@@ -472,7 +471,7 @@ Calculators](https://www.hpmuseum.org/). That's another option for feedback and
 support.
 
 For feature requests, I recommend scanning through the [Future
-Enhancements](docs/USER_GUIDE_FUTURE.md) document and verifying that your
+Enhancements](upstream/docs/USER_GUIDE_FUTURE.md) document and verifying that your
 feature is not already there.
 
 Please refrain from emailing me directly unless the content is sensitive. The
